@@ -35,6 +35,7 @@
 		271BCF20294B826900FA987C /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271BCF1C294B826900FA987C /* UserEntity+CoreDataClass.swift */; };
 		271BCF21294B826900FA987C /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271BCF1D294B826900FA987C /* UserEntity+CoreDataProperties.swift */; };
 		271BCF26294B83FF00FA987C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271BCF25294B83FF00FA987C /* DataManager.swift */; };
+		27FEFA59294CC024001FDB70 /* UIViewController+hideKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FEFA58294CC024001FDB70 /* UIViewController+hideKeyboardOnTap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		271BCF1C294B826900FA987C /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		271BCF1D294B826900FA987C /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		271BCF25294B83FF00FA987C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		27FEFA58294CC024001FDB70 /* UIViewController+hideKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeyboardOnTap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				270A292B2942141A00A101B8 /* Info.plist */,
 				270A2962294B7A3400A101B8 /* ProductsModel.xcdatamodeld */,
 				271BCF25294B83FF00FA987C /* DataManager.swift */,
+				27FEFA58294CC024001FDB70 /* UIViewController+hideKeyboardOnTap.swift */,
 			);
 			path = "the-fripp";
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FEFA59294CC024001FDB70 /* UIViewController+hideKeyboardOnTap.swift in Sources */,
 				270A294329435B0400A101B8 /* SignUpViewController.swift in Sources */,
 				271BCF21294B826900FA987C /* UserEntity+CoreDataProperties.swift in Sources */,
 				270A295629490AB000A101B8 /* LoginButton.swift in Sources */,
@@ -397,7 +401,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XZ6M5X8DV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "the-fripp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -426,7 +430,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XZ6M5X8DV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "the-fripp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

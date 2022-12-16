@@ -93,7 +93,7 @@ class MainViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        isLoading = true
+        self.hideKeyboardWhenTappedAround()
         configureUI()
     }
     

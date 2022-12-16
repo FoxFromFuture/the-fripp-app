@@ -34,7 +34,7 @@ class LinkButton: TextButton {
     ) {
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
-        let gitUrl = URL(string: "http://www.google.com")
+        let gitUrl = URL(string: "https://github.com/FoxFromFuture/the-fripp-app")
         UIApplication.shared.open(gitUrl!)
     }
 }
