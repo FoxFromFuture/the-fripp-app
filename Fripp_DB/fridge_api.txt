@@ -1,0 +1,58 @@
+FRIDGE API:
+
+Создание продукта
+<URL>/api/fridge/product
+Method: PUT
+Request:
+ Headers:
+  Application-Type: application/json
+  Authorization: Bearer <JWT token>
+ Body:
+  name, bestBeforeDate, quantity
+Response:
+ Body: status, product
+ Типы полей:
+  status (int): 201 - продукт создан/500 - ошибка на сервере
+  product (object): {id(int), name(string), bestBeforeDate(date string), quantity(int)}
+——————————————————
+Обновление инфы продукта
+<URL>/api/fridge/product/:productId
+Method: PATCH
+Request:
+ Headers:
+  Application-Type: application/json
+  Authorization: Bearer <JWT token>
+ Body:
+  name | bestBeforeDate | quantity - все поля носят необязательный характер, можно отправить только некоторые из них
+Response:
+ Body: status, token
+ Типы полей:
+  status (int): 200 - успешно/500 - ошибка на сервере/404 - продукта с данным id не существует
+  product (object): {id(int), name(string), bestBeforeDate(date string), quantity(int)}
+——————————————————
+Удаление продукта
+<URL>/api/fridge/product/:productId
+Method: DELETE
+Request:
+ Headers:
+  Application-Type: application/json
+  Authorization: Bearer <JWT token>
+Response:
+ Body: status
+ Типы полей:
+  status (int): 200 - успешно/500 - ошибка на сервере/404 - продукта с данным id не существует
+——————————————————
+Получение всех продуктов
+<URL>/api/fridge/allProducts
+Method: GET
+Request:
+ Headers:
+  Application-Type: application/json
+  Authorization: Bearer <JWT token>
+Response:
+ Body: status, products
+ Типы полей:
+  status (int): 200 - успешно/500 - ошибка на сервере/404 - продукта с данным id не существует
+  products (Array): [
+   product (object): {id(int), name(string), bestBeforeDate(date string), quantity(int)}
+  ]

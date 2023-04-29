@@ -1,0 +1,42 @@
+USER API:
+
+Регистрация
+<URL>/api/user/signUp
+Method: PUT
+Request:
+ Headers:
+  Application-Type: application/json
+ Body:
+  email, password
+Response:
+ Body: status, token
+ Типы полей:
+  status (int): 201 - регистрация прошла успешно/500 - ошибка на сервере/400 - пользователь с таким мылом существует
+  token (string): Если status не 201, то пустая строка
+——————————————————
+Авторизация
+<URL>/api/user/signIn
+Method: POST
+Request:
+ Headers:
+  Application-Type: application/json
+ Body:
+  email, password
+Response:
+ Body: status, token
+ Типы полей:
+  status (int): 200 - успешно/500 - ошибка на сервере/404 - мыло или пароль неправильные
+  token (string): Если status не 200, то пустая строка
+——————————————————
+Аутентификация(рефреш токена)
+<URL>/api/user/auth
+Method: GET
+Request:
+ Headers:
+  Application-Type: application/json
+  Authorization: Bearer <JWT token>
+Response:
+ Body: status, token
+ Типы полей:
+  status (int): 200 - успешно/500 - ошибка на сервере/401 - пользователь не авторизован
+  token (string): Если status не 200, то пустая строка

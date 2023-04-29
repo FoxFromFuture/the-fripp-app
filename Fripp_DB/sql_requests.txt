@@ -1,0 +1,25 @@
+CREATE TABLE Users (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	email VARCHAR(20) UNIQUE,
+	password VARCHAR(20)
+);
+
+CREATE TABLE Products (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(20),
+	bestBeforeDate DATE,
+	quantity INT
+);
+
+//User controller
+INSERT INTO Users  (email, password) VALUES ("email_value","password_value");
+SELECT * FROM Users WHERE email="email_value" and password = "password_value";
+SELECT EXISTS(SELECT * FROM Users WHERE email="email_value" and password = "password_value");
+
+//Fridge controller
+INSERT INTO Products  (name, bestBeforeDate, quantity ) VALUES ("name_value", yyyy-mm-dd, 0);
+SELECT * FROM Products WHERE name="name_value";
+SELECT EXISTS(SELECT * FROM Products WHERE name="name_value");
+DELETE FROM Products WHERE id="productId";
+
+SELECT * FROM Products INNER JOIN Users ON Products.userId = Users.id WHERE Users.id = value_Id;
