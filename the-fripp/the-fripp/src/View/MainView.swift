@@ -15,6 +15,7 @@ class MainView: UIView {
     static let productsTable = UITableView(frame: .zero, style: .plain)
     private let addButton = UIButton()
     private let aboutButton = UIButton()
+    private let logoutButton = LogoutButton()
     public let searchView = UISearchBar()
     public let dialogMessage = UIAlertController(title: "Add new product", message: "Enter the product name, quantity and expiration date", preferredStyle: .alert)
     private var isLoading = false
@@ -31,6 +32,7 @@ class MainView: UIView {
         setupAboutButton()
         setupDialogMessage()
         setupSearchBar()
+        setupLogoutButton()
         SceneDelegate.mainController.getData()
         MainView.filteredData = MainView.productsViewModels
         for i in MainView.productsViewModels.indices {
@@ -150,6 +152,17 @@ class MainView: UIView {
         searchView.searchBarStyle = .minimal
         searchView.barTintColor = UIColor.clear
         searchView.placeholder = "Search"
+    }
+    
+    private func setupLogoutButton() {
+        self.addSubview(logoutButton)
+        logoutButton.pinTop(to: self.topAnchor, 100)
+        logoutButton.pin(to: self, [.right: 16])
+        logoutButton.setupText(
+            "Logout",
+            UIColor(hex: "007AFF"),
+            .systemFont(ofSize: 14, weight: .regular)
+        )
     }
     
     public func configureSearchView() {

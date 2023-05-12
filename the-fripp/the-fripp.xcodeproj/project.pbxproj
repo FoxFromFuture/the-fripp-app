@@ -23,6 +23,7 @@
 		270A295A2949D63800A101B8 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A29592949D63800A101B8 /* LinkButton.swift */; };
 		270A295C2949E22200A101B8 /* UIView+borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A295B2949E22200A101B8 /* UIView+borders.swift */; };
 		270A295F294A338C00A101B8 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A295E294A338C00A101B8 /* SearchCell.swift */; };
+		275F68CE2A0E6806004AC108 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275F68CD2A0E6806004AC108 /* LogoutButton.swift */; };
 		27773C6E29F3159C003608B9 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27773C6D29F3159C003608B9 /* StartView.swift */; };
 		27773C7029F315AA003608B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27773C6F29F315AA003608B9 /* LoginView.swift */; };
 		27773C7229F315B6003608B9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27773C7129F315B6003608B9 /* WelcomeView.swift */; };
@@ -61,6 +62,7 @@
 		270A29592949D63800A101B8 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 		270A295B2949E22200A101B8 /* UIView+borders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+borders.swift"; sourceTree = "<group>"; };
 		270A295E294A338C00A101B8 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		275F68CD2A0E6806004AC108 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
 		27773C6D29F3159C003608B9 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		27773C6F29F315AA003608B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		27773C7129F315B6003608B9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				270A295729490D6E00A101B8 /* StartButton.swift */,
 				270A29512949058400A101B8 /* RegistrationButton.swift */,
 				270A29592949D63800A101B8 /* LinkButton.swift */,
+				275F68CD2A0E6806004AC108 /* LogoutButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				27773C7E29F3161F003608B9 /* WelcomeController.swift in Sources */,
 				27773C6E29F3159C003608B9 /* StartView.swift in Sources */,
 				270A295F294A338C00A101B8 /* SearchCell.swift in Sources */,
+				275F68CE2A0E6806004AC108 /* LogoutButton.swift in Sources */,
 				270A293229422B6C00A101B8 /* UIColor+hex.swift in Sources */,
 				27773C7029F315AA003608B9 /* LoginView.swift in Sources */,
 				270A293429422CCF00A101B8 /* UIView+pin.swift in Sources */,
